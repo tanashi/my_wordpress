@@ -2625,14 +2625,14 @@ li.comment {
 /* Small menu */
 .menu-toggle {
   display: none;
-  cursor: pointer;
   position: relative;
   top: 20px;
   right: 20px;
 }
-
 .menu-toggle .genericon-menu {
   font-size: 1em;
+  cursor: pointer;
+  color: #999999;
 }
 
 @media screen and (max-width: 768px) {
@@ -2656,10 +2656,6 @@ li.comment {
     display: block;
     float: none;
     padding: 10px 0;
-  }
-
-  #site-navigation .genericon-menu {
-    color: #999999;
   }
 }
 .front-feature {

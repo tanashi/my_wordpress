@@ -5,13 +5,14 @@
  */
 ( function() {
 	var container = document.getElementById( 'site-navigation' ),
-	    button    = container.getElementsByTagName( 'h1' )[0],
+	    button = document.getElementById( 'toggle-button' ),
+	    div    = button.getElementsByTagName( 'div' )[0],
 	    menu      = container.getElementsByTagName( 'ul' )[0];
 
 	if ( undefined == button || undefined == menu )
 		return false;
 
-	button.onclick = function() {
+	div.onclick = function() {
 
 		if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
 			button.className = button.className.replace( ' toggled-on', '' );

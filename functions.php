@@ -229,3 +229,11 @@ function description_in_nav_menu($item_output, $item){
   return preg_replace('/(<a.*?>[^<]*?)</', '$1' . "<br /><span>{$item->description}</span><", $item_output);
 }
 
+function vc_remove_wp_ver_css_js( $src ) {
+    if ( strpos( $src, 'ver=' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+}
+add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+

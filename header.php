@@ -30,11 +30,11 @@
 			<div class="row">
 				<h1 class="site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="web quokka" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_2.png" alt="web_quokka" />
 					</a>
 				</h1>
+				<h1 id="toggle-button" class="menu-toggle"><div class="genericon genericon-menu"></div></h1>
 				<nav id="site-navigation" class="navigation-main" role="navigation">
-					<h1 class="menu-toggle text-right"><div class="genericon genericon-menu"></div></h1>
 					<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
 				</nav>
 				<!-- #site-navigation -->
