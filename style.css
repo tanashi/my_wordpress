@@ -5122,47 +5122,64 @@ li.comment {
   font-size: 0.875em;
 }
 
-.front-news {
+.front-blog {
   background-color: #e0d5b8;
-  padding: 10px 0;
-  margin: 30px 0;
 }
 
-.front-news h3 {
-  border-bottom: 1px solid #c6b688;
-  box-shadow: 0 1px 0 #eae2cc;
-  -webkit-box-shadow: 0 1px 0 #eae2cc;
-  -moz-box-shadow: 0 1px 0 #eae2cc;
+.front-service {
+  background-color: #e0d5b8;
 }
 
-.front-news .date {
-  margin-top: 10px;
+.front-news {
+  background-color: #fff;
+  margin: 0 auto;
 }
 
-.front-news .thumbnail img {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+h3 {
+  color: #7f8c8d;
+}
+h3 span {
+  position: relative;
+  left: 10px;
+  font-size: 60%;
 }
 
-.newspost {
-  background-color: #fffcf4;
-  margin-bottom: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+.grid {
   overflow: hidden;
   font-size: 0.875em;
-  height: 320px;
+  margin: 5px 5px;
+}
+.grid > a:hover {
+  opacity: 0.8;
+}
+.grid .news-meta {
+  position: absolute;
+  padding: 5px 5px;
+  background-color: #fff;
+  opacity: 0.9;
+  color: #333;
+}
+.grid .news-meta p {
+  margin: 0;
+}
+.grid .news-date {
+  top: 0px;
+}
+.grid .news-title {
+  top: 140px;
+}
+.grid .news-category {
+  right: 0px;
 }
 
-.newspost:hover {
-  background-color: #eee;
+.news-tag {
+  margin: 15px 0;
 }
-
-.news-meta {
-  padding: 0 5px;
+.news-tag a {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #999;
+  color: #fff;
 }
 
 .front-sp .circle {
@@ -5549,6 +5566,10 @@ ul#page_link_menu li a {
   height: 60px;
 }
 
+#masthead {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .site-logo a {
     background: url("assets/img/logo_2.png") -22px no-repeat;
@@ -5560,19 +5581,6 @@ ul#page_link_menu li a {
   .site-logo img {
     max-width: none;
     display: none;
-  }
-
-  .front-news .small-3 {
-    padding-right: 0;
-  }
-
-  .front-news .small-9 {
-    padding-left: 5px;
-  }
-
-  .newspost {
-    margin-bottom: 10px;
-    height: auto;
   }
 
   .comments-area {

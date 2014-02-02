@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+a
 	<section id="primary" class="content-area large-9 columns">
 		<div id="content" class="site-content" role="main">
 
@@ -97,8 +97,8 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-				<?php if ( class_exists( 'WP_SiteManager_page_navi' ) ) { 
-						WP_SiteManager_page_navi::page_navi( 'items=7&prev_label=Prev&next_label=Next&first_label=First&last_label=Last&show_num=1&num_position=after' ); 
+				<?php if ( class_exists( 'WP_SiteManager_page_navi' ) ) {
+						WP_SiteManager_page_navi::page_navi( 'items=7&prev_label=Prev&next_label=Next&first_label=First&last_label=Last&show_num=1&num_position=after' );
 					} else {
 						_s_content_nav( 'nav-below' );
 					}

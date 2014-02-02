@@ -21,10 +21,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to overload this in a child theme then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
 					get_template_part( 'content', get_post_format() );
 				?>
 
@@ -33,9 +29,7 @@ get_header(); ?>
 			<?php if ( class_exists( 'WP_SiteManager_page_navi' ) ) { WP_SiteManager_page_navi::page_navi( 'items=7&prev_label=Prev&next_label=Next&first_label=First&last_label=Last&show_num=1&num_position=after' ); } ?>
 
 		<?php else : ?>
-
 			<?php get_template_part( 'no-results', 'index' ); ?>
-
 		<?php endif; ?>
 
 		</div><!-- #content -->

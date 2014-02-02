@@ -37,15 +37,8 @@
 				<nav id="site-navigation" class="navigation-main" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' =>'primary' ) ); ?>
 				</nav>
-				<!-- #site-navigation -->
 			</div>
 		</header>
-		<!-- #masthead -->
-<?php if ( is_home() || is_front_page() ) : ?>
-		<div id="main-img">
-			<img src="<?php header_image(); ?>" alt="" />
-		</div>
-<?php endif; ?>
 <?php if ( ! is_front_page() ) : ?>
 		<div id="main" class="site-main row">
 <?php endif; ?>

@@ -1,4 +1,6 @@
 @charset "UTF-8";
+$orange : #d35400;
+
 /*
 Theme Name: wp-dcafe
 Theme URI: http://wp-d.org
@@ -2616,10 +2618,10 @@ li.comment {
   font-size: 60%;
 }
 .navigation-main ul li :hover {
-  color: #d35400;
+  color: $orange;
 }
 .navigation-main ul .current-menu-item a {
-  color: #d35400;
+  color: $orange;
 }
 
 /* Small menu */
@@ -2677,46 +2679,66 @@ li.comment {
   font-size: 0.875em;
 }
 
-.front-news {
+.front-blog {
   background-color: #e0d5b8;
-  padding: 10px 0;
-  margin: 30px 0;
-}
-.front-news h3 {
-  border-bottom: 1px solid #c6b688;
-  box-shadow: 0 1px 0 #eae2cc;
-  -webkit-box-shadow: 0 1px 0 #eae2cc;
-  -moz-box-shadow: 0 1px 0 #eae2cc;
-}
-.front-news .date {
-  margin-top: 10px;
-}
-.front-news .thumbnail img {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
 }
 
-.newspost {
-  background-color: #fffcf4;
-  margin-bottom: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+.front-service {
+  background-color: #e0d5b8;
+}
+
+.front-news {
+  background-color: #fff;
+  margin: 0 auto;
+}
+h3 {
+  color: #7f8c8d;
+  span {
+    position: relative;
+    left: 10px;
+    font-size: 60%;
+  }
+}
+
+.grid {
   overflow: hidden;
   font-size: 0.875em;
-  height: 320px;
-}
+  margin: 5px 5px;
+  > a:hover {
+    opacity: 0.8;
+  }
+  .news-meta {
+    position: absolute;
+    padding: 5px 5px;
+    background-color: #fff;
+    opacity: 0.9;
+    color: #333;
+    p {
+      margin: 0;
+    }
+  }
 
-.newspost:hover {
-  background-color: #eee;
-}
+  .news-date {
+    top: 0px;
+  }
 
-.news-meta {
-  padding: 0 5px;
-}
+  .news-title {
+    top: 140px;
+  }
 
+  .news-category {
+    right: 0px;
+  }
+}
+.news-tag {
+  margin: 15px 0;
+  a {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #999;
+    color: #fff;
+  }
+}
 .front-sp .circle {
   text-align: center;
 }
@@ -3092,6 +3114,10 @@ ul#page_link_menu li a {
   }
 }
 
+#masthead {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
 
   .site-logo a {
@@ -3103,19 +3129,6 @@ ul#page_link_menu li a {
   .site-logo img {
     max-width: none;
     display: none;
-  }
-
-  .front-news .small-3 {
-    padding-right: 0;
-  }
-
-  .front-news .small-9 {
-    padding-left: 5px;
-  }
-
-  .newspost {
-    margin-bottom: 10px;
-    height: auto;
   }
 
   .comments-area {
